@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1> Form</h1> 
+    <p>form element will helps to get client data and send it to the server</p>
+    <p>There are tow methods for sending data to the server</p>
+    <ul>
+        <li>GET => is default, less secure because its use URL for sending data to the server with the help of ? => query string, limitation 2048 char, not supporting file uploading, we bookmark URL with data, faster then post thats why 90% of search engines are using get method, we cn get back data after refreshing/reloading our page </li>
+        <li>POST => secure -> not using url, no limitation, support file upload, we cant bookmark url with data</li>
+    </ul>
+    <form>
+        <input type="text" name="username" id="kd@04062">
+        <input type="password" name="password" id="">
+        <input type="text" name="email" id="">
+        <input type="submit" name="" id="">
+
+    </form>
+    <form method="post">
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="text" name="email" id="">
+        <input type="submit" name="" id="">
+
+    </form>
+    <form method="post" enctype="multipart/form-data">
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="text" name="email" id="">
+        <input type="file" accept="image/*" name="email" id="">
+        <input type="submit" name="" id="">
+    </form>
+    <form method="post" action="serverpage.php" enctype="multipart/form-data">
+        <input type="text" name="username" id="">
+        <input type="password" name="password" id="">
+        <input type="text" name="email" id="">
+        <input type="file" accept="image/*" name="email" id="">
+        <input type="submit" name="" id="">
+    </form>
+</body>
+</html>
